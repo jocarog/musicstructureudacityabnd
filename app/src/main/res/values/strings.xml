@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Musike</string>
+
+    <string name="welcome">Welcome to the \nUdacity Music App</string>
+
+    <string name="category_songs_sp">Spanish Songs</string>
+
+    <string name="category_songs_eng">English Songs</string>
+
+    <string name="category_year">Year</string>
+
+</resources>
