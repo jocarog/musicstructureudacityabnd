@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
+// All pictures used here have been obtained from unsplash.com
+// Music list based off of https://www.billboard.com/charts/pop-songs
 import java.util.Set;
 
 public class MainActivity extends AppCompatActivity {
