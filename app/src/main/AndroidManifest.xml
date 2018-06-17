@@ -16,20 +16,22 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".SpanishSongs"
+        <activity
+            android:name=".SpanishSongs"
             android:label="Spanish Songs"
-            android:parentActivityName=".MainActivity"/>
+            android:parentActivityName=".MainActivity" />
         <!-- Parent activity meta-data to support 4.0 and lower -->
         <meta-data
             android:name="android.support.PARENT_ACTIVITY"
-            android:value=".MainActivity"/>
-        <activity android:name=".EnglishSongs"
+            android:value=".MainActivity" />
+        <activity
+            android:name=".EnglishSongs"
             android:label="English Songs"
-            android:parentActivityName=".MainActivity"/>
+            android:parentActivityName=".MainActivity" />
         <!-- Parent activity meta-data to support 4.0 and lower -->
         <meta-data
             android:name="android.support.PARENT_ACTIVITY"
-            android:value=".MainActivity"/>
+            android:value=".MainActivity" />
     </application>
 
 </manifest>

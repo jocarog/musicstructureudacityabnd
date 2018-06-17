@@ -2,7 +2,7 @@ package com.example.android.musike;
 
 import android.support.v7.app.AppCompatActivity;
 
-public class SongList  {
+public class SongList {
 
     // Song name
     private String mSong;

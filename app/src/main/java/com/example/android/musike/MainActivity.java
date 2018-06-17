@@ -23,36 +23,36 @@ public class MainActivity extends AppCompatActivity {
         setContentView ( R.layout.activity_main );
 
         //Find the View that shows the Spanish Songs category
-        TextView SpanishSongs = (TextView) findViewById ( R.id.category_spanish_songs );
+        TextView spanishSongs = (TextView) findViewById ( R.id.category_spanish_songs );
 
         //Set a click listener on the SpanishSongs View
-        SpanishSongs.setOnClickListener ( new View.OnClickListener () {
-                                       // The code in this method will be executed when the songs category is clicked on.
-                                       @Override
-                                       public void onClick(View view) {
-                                           // Create a new intent to open the SpanishSongs Category
-                                           Intent spanish_songs = new Intent ( MainActivity.this, SpanishSongs.class );
-                                           // Start the new activity
-                                           startActivity ( spanish_songs );
-                                       }
-                                   }
+        spanishSongs.setOnClickListener ( new View.OnClickListener () {
+                                              // The code in this method will be executed when the songs category is clicked on.
+                                              @Override
+                                              public void onClick(View view) {
+                                                  // Create a new intent to open the SpanishSongs Category
+                                                  Intent spanish_songs = new Intent ( MainActivity.this, SpanishSongs.class );
+                                                  // Start the new activity
+                                                  startActivity ( spanish_songs );
+                                              }
+                                          }
         );
 
         // Find the View that shows the english songs category
-        TextView EnglishSongs = (TextView) findViewById ( R.id.category_english_songs );
+        TextView englishSongs = (TextView) findViewById ( R.id.category_english_songs );
 
-        //set a click listener on the artist category  view
-        EnglishSongs.setOnClickListener ( new View.OnClickListener () {
-        // The code in this method will be executed when the top english category is clicked on.
-                                          @Override
-                                      public void onClick(View view) {
-        //Create a new intent to open the English Songs category
-                                        Intent english_songs = new Intent ( MainActivity.this, EnglishSongs.class );
+        //set a click listener on the english songs category  view
+        englishSongs.setOnClickListener ( new View.OnClickListener () {
+                                              // The code in this method will be executed when the top english category is clicked on.
+                                              @Override
+                                              public void onClick(View view) {
+                                                  //Create a new intent to open the English Songs category
+                                                  Intent english_songs = new Intent ( MainActivity.this, EnglishSongs.class );
 
-         //Start the new activity
-                                      startActivity ( english_songs );
-                                }
-                          }
+                                                  //Start the new activity
+                                                  startActivity ( english_songs );
+                                              }
+                                          }
         );
 
     }
