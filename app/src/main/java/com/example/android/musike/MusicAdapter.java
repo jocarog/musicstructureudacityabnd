@@ -13,27 +13,27 @@ import java.util.ArrayList;
 public class MusicAdapter extends ArrayAdapter<SongList> {
 
     public MusicAdapter(Context context, ArrayList<SongList> list) {
-        super ( context, 0, list );
+    super ( context, 0, list );
 
     }
 
     public View getView(int position, View convertView, ViewGroup parent) {
-        View listItemView = convertView;
-        if (listItemView == null)
-            listItemView = LayoutInflater.from ( getContext () ).inflate
-                    ( R.layout.list_order, parent, false );
+    View listItemView = convertView;
+    if (listItemView == null)
+    listItemView = LayoutInflater.from ( getContext () ).inflate
+    ( R.layout.list_order, parent, false );
 
-        SongList currentSong = getItem ( position );
+    SongList currentSong = getItem ( position );
 
-        ImageView iconView = (ImageView) listItemView.findViewById ( R.id.imageView_icon );
-        iconView.setImageResource ( currentSong.getImageResourceId () );
+    ImageView iconView = (ImageView) listItemView.findViewById ( R.id.imageView_icon );
+    iconView.setImageResource ( currentSong.getImageResourceId () );
 
-        TextView name = (TextView) listItemView.findViewById ( R.id.song_title );
-        name.setText ( currentSong.getSongName () );
+    TextView name = (TextView) listItemView.findViewById ( R.id.song_title );
+    name.setText ( currentSong.getSongName () );
 
-        TextView artist = (TextView) listItemView.findViewById ( R.id.artist_name );
-        artist.setText ( currentSong.getArtistName () );
+    TextView artist = (TextView) listItemView.findViewById ( R.id.artist_name );
+    artist.setText ( currentSong.getArtistName () );
 
-        return listItemView;
+    return listItemView;
     }
 }

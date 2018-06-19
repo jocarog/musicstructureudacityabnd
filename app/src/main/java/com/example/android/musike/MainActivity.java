@@ -30,10 +30,10 @@ public class MainActivity extends AppCompatActivity {
                                               // The code in this method will be executed when the songs category is clicked on.
                                               @Override
                                               public void onClick(View view) {
-                                                  // Create a new intent to open the SpanishSongs Category
-                                                  Intent spanish_songs = new Intent ( MainActivity.this, SpanishSongs.class );
-                                                  // Start the new activity
-                                                  startActivity ( spanish_songs );
+        // Create a new intent to open the SpanishSongs Category
+        Intent spanish_songs = new Intent ( MainActivity.this, SpanishSongs.class );
+        // Start the new activity
+        startActivity ( spanish_songs );
                                               }
                                           }
         );
@@ -46,11 +46,11 @@ public class MainActivity extends AppCompatActivity {
                                               // The code in this method will be executed when the top english category is clicked on.
                                               @Override
                                               public void onClick(View view) {
-                                                  //Create a new intent to open the English Songs category
-                                                  Intent english_songs = new Intent ( MainActivity.this, EnglishSongs.class );
+        //Create a new intent to open the English Songs category
+        Intent english_songs = new Intent ( MainActivity.this, EnglishSongs.class );
 
-                                                  //Start the new activity
-                                                  startActivity ( english_songs );
+        //Start the new activity
+        startActivity ( english_songs );
                                               }
                                           }
         );
